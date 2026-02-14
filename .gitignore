@@ -1,0 +1,28 @@
+# Java build artifacts
+*.class
+*.jar
+*.war
+*.ear
+*.log
+
+# Build tool directories
+build/
+target/
+.gradle/
+out/
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+*.env.local

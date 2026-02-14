@@ -1,0 +1,55 @@
+{
+  "current": {
+    "phase": 1,
+    "module": "1.2",
+    "moduleName": "Variables, Types & Type Safety",
+    "startedAt": "2026-02-14",
+    "lastSessionAt": "2026-02-14"
+  },
+  "completed": {
+    "modules": ["1.1"],
+    "challenges": ["1.1-hello-payment-calculator"],
+    "projects": [],
+    "engineeringConcepts": [
+      "Gradle build lifecycle",
+      "src/main vs src/test separation",
+      "JAR artifacts and manifests",
+      "Gradle wrapper for consistent builds",
+      "main() as JVM entry point"
+    ]
+  },
+  "partiallyUnderstood": {
+    "modules": [],
+    "notes": {}
+  },
+  "struggles": {
+    "currentStuckOn": null,
+    "history": []
+  },
+  "apexBridges": {
+    "conceptsMapped": [
+      "sfdx push → gradle build",
+      "Deploy to org → JAR artifact",
+      "Platform-managed runtime → you own the JVM",
+      "Tests in same folder → tests in separate src/test tree"
+    ],
+    "surprises": [
+      "No platform to push to — you run the app yourself",
+      "JAR needs a manifest to know its entry point"
+    ],
+    "notes": {}
+  },
+  "stats": {
+    "totalModules": 40,
+    "totalProjects": 12,
+    "modulesCompleted": 1,
+    "modulesPartial": 0,
+    "challengesSolved": 1,
+    "totalSessions": 1,
+    "streak": 1
+  },
+  "csharpNotes": {
+    "conceptsCompared": [],
+    "notes": {}
+  }
+}
