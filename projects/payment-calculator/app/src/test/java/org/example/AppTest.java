@@ -11,4 +11,9 @@ class AppTest {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getPaymentMessage(), "app should have a payment message");
     }
+
+    @Test void appCanPrintTransaction() {
+        App classUnderTest = new App();
+        assertNotNull(classUnderTest.printTransaction(), "app should be able to print a transaction");
+    }
 }

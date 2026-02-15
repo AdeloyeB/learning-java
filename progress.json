@@ -1,21 +1,26 @@
 {
   "current": {
     "phase": 1,
-    "module": "1.2",
-    "moduleName": "Variables, Types & Type Safety",
-    "startedAt": "2026-02-14",
-    "lastSessionAt": "2026-02-14"
+    "module": "1.3",
+    "moduleName": "Control Flow & Pattern Matching",
+    "startedAt": "2026-02-15",
+    "lastSessionAt": "2026-02-15"
   },
   "completed": {
-    "modules": ["1.1"],
-    "challenges": ["1.1-hello-payment-calculator"],
+    "modules": ["1.1", "1.2"],
+    "challenges": ["1.1-hello-payment-calculator", "1.2-payment-amount-variables"],
     "projects": [],
     "engineeringConcepts": [
       "Gradle build lifecycle",
       "src/main vs src/test separation",
       "JAR artifacts and manifests",
       "Gradle wrapper for consistent builds",
-      "main() as JVM entry point"
+      "main() as JVM entry point",
+      "Primitives vs object wrappers (int vs Integer)",
+      "BigDecimal for financial calculations",
+      "IEEE 754 floating point precision loss",
+      "RoundingMode for currency math",
+      "Clean variable naming — avoid redundant context"
     ]
   },
   "partiallyUnderstood": {
@@ -24,29 +29,37 @@
   },
   "struggles": {
     "currentStuckOn": null,
-    "history": []
+    "history": [
+      "Boolean vs boolean — took 3 reminders to stick"
+    ]
   },
   "apexBridges": {
     "conceptsMapped": [
       "sfdx push → gradle build",
       "Deploy to org → JAR artifact",
       "Platform-managed runtime → you own the JVM",
-      "Tests in same folder → tests in separate src/test tree"
+      "Tests in same folder → tests in separate src/test tree",
+      "Apex Decimal → Java BigDecimal",
+      "Apex Integer (always object) → Java int (primitive) vs Integer (object)",
+      "Single quotes for strings → double quotes only (single = char)"
     ],
     "surprises": [
       "No platform to push to — you run the app yourself",
-      "JAR needs a manifest to know its entry point"
+      "JAR needs a manifest to know its entry point",
+      "Java has primitives — Apex hides them from you",
+      "0.1 + 0.2 != 0.3 with double",
+      "Local variables have no default value — must initialize"
     ],
     "notes": {}
   },
   "stats": {
     "totalModules": 40,
     "totalProjects": 12,
-    "modulesCompleted": 1,
+    "modulesCompleted": 2,
     "modulesPartial": 0,
-    "challengesSolved": 1,
-    "totalSessions": 1,
-    "streak": 1
+    "challengesSolved": 2,
+    "totalSessions": 2,
+    "streak": 2
   },
   "csharpNotes": {
     "conceptsCompared": [],

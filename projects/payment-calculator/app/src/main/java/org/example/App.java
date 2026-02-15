@@ -3,12 +3,28 @@
  */
 package org.example;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 public class App {
     public String getPaymentMessage() {
         return "Payment Calculator v1.0\nReady to process transactions ";
     }
 
+    public String printTransaction(){
+        boolean approved = true;
+        long id = 1001L;
+        String merchantName = "Coca Cola";
+        String currency = "USD";
+        BigDecimal amount = new BigDecimal("100.00");
+        BigDecimal rate = new BigDecimal("0.029");
+        BigDecimal fee = amount.multiply(rate).setScale(2, RoundingMode.HALF_UP);
+        BigDecimal totalAmount = amount.add(fee);
+        String message = "Transaction " + id + " " + (approved ? "approved" : "rejected") + " for " + merchantName + " in " + currency + " with amount " + amount + " and total amount " + totalAmount;
+        return message;
+    }
+
     public static void main(String[] args) {
-        System.out.println(new App().getPaymentMessage());
+        System.out.println(new App().printTransaction());
     }
 }
