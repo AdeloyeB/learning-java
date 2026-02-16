@@ -1,14 +1,14 @@
 {
   "current": {
     "phase": 1,
-    "module": "1.3",
-    "moduleName": "Control Flow & Pattern Matching",
-    "startedAt": "2026-02-15",
-    "lastSessionAt": "2026-02-15"
+    "module": "1.4",
+    "moduleName": "Methods & Clean Code",
+    "startedAt": "2026-02-16",
+    "lastSessionAt": "2026-02-16"
   },
   "completed": {
-    "modules": ["1.1", "1.2"],
-    "challenges": ["1.1-hello-payment-calculator", "1.2-payment-amount-variables"],
+    "modules": ["1.1", "1.2", "1.3"],
+    "challenges": ["1.1-hello-payment-calculator", "1.2-payment-amount-variables", "1.3-transaction-risk-router"],
     "projects": [],
     "engineeringConcepts": [
       "Gradle build lifecycle",
@@ -20,7 +20,12 @@
       "BigDecimal for financial calculations",
       "IEEE 754 floating point precision loss",
       "RoundingMode for currency math",
-      "Clean variable naming — avoid redundant context"
+      "Clean variable naming — avoid redundant context",
+      "if/else with BigDecimal.compareTo()",
+      "Java 21 switch expressions (arrow syntax)",
+      "Switch as value-producing expression",
+      "static vs instance methods",
+      "No implicit type conversion (int to BigDecimal)"
     ]
   },
   "partiallyUnderstood": {
@@ -30,7 +35,10 @@
   "struggles": {
     "currentStuckOn": null,
     "history": [
-      "Boolean vs boolean — took 3 reminders to stick"
+      "Boolean vs boolean — took 3 reminders to stick",
+      "AND vs && — Apex/SOQL habit carried over",
+      "Passing int where BigDecimal expected — type safety",
+      "Calling instance methods without the instance reference"
     ]
   },
   "apexBridges": {
@@ -41,23 +49,27 @@
       "Tests in same folder → tests in separate src/test tree",
       "Apex Decimal → Java BigDecimal",
       "Apex Integer (always object) → Java int (primitive) vs Integer (object)",
-      "Single quotes for strings → double quotes only (single = char)"
+      "Single quotes for strings → double quotes only (single = char)",
+      "Apex switch on → Java switch expression (returns a value)",
+      "AND() formula → && operator"
     ],
     "surprises": [
       "No platform to push to — you run the app yourself",
       "JAR needs a manifest to know its entry point",
       "Java has primitives — Apex hides them from you",
       "0.1 + 0.2 != 0.3 with double",
-      "Local variables have no default value — must initialize"
+      "Local variables have no default value — must initialize",
+      "Switch can produce a value — Apex switch cannot",
+      "Can't switch on BigDecimal — must convert to String/enum first"
     ],
     "notes": {}
   },
   "stats": {
     "totalModules": 40,
     "totalProjects": 12,
-    "modulesCompleted": 2,
+    "modulesCompleted": 3,
     "modulesPartial": 0,
-    "challengesSolved": 2,
+    "challengesSolved": 3,
     "totalSessions": 2,
     "streak": 2
   },
