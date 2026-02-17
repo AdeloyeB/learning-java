@@ -6,6 +6,8 @@ package org.example;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.math.BigDecimal;
+
 class AppTest {
     @Test void appHasAGreeting() {
         App classUnderTest = new App();
@@ -14,6 +16,6 @@ class AppTest {
 
     @Test void appCanPrintTransaction() {
         App classUnderTest = new App();
-        assertNotNull(classUnderTest.printTransaction(), "app should be able to print a transaction");
+        assertNotNull(classUnderTest.formatTransaction(new BigDecimal("5000"), new BigDecimal("0.02"), "Checkout.com", "GBP"), "app should be able to print a transaction");
     }
 }

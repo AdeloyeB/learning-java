@@ -1,14 +1,14 @@
 {
   "current": {
     "phase": 1,
-    "module": "1.4",
-    "moduleName": "Methods & Clean Code",
-    "startedAt": "2026-02-16",
-    "lastSessionAt": "2026-02-16"
+    "module": "1.5",
+    "moduleName": "Arrays & Collections",
+    "startedAt": "2026-02-17",
+    "lastSessionAt": "2026-02-17"
   },
   "completed": {
-    "modules": ["1.1", "1.2", "1.3"],
-    "challenges": ["1.1-hello-payment-calculator", "1.2-payment-amount-variables", "1.3-transaction-risk-router"],
+    "modules": ["1.1", "1.2", "1.3", "1.4"],
+    "challenges": ["1.1-hello-payment-calculator", "1.2-payment-amount-variables", "1.3-transaction-risk-router", "1.4-clean-methods-refactor"],
     "projects": [],
     "engineeringConcepts": [
       "Gradle build lifecycle",
@@ -25,7 +25,12 @@
       "Java 21 switch expressions (arrow syntax)",
       "Switch as value-producing expression",
       "static vs instance methods",
-      "No implicit type conversion (int to BigDecimal)"
+      "No implicit type conversion (int to BigDecimal)",
+      "Single Responsibility Principle (SRP)",
+      "Method signatures — parameters define the contract",
+      "Data flows through parameters, not hardcoded inside methods",
+      "BigDecimal string constructor vs double constructor",
+      "Monolith method → separated clean methods"
     ]
   },
   "partiallyUnderstood": {
@@ -37,8 +42,9 @@
     "history": [
       "Boolean vs boolean — took 3 reminders to stick",
       "AND vs && — Apex/SOQL habit carried over",
-      "Passing int where BigDecimal expected — type safety",
-      "Calling instance methods without the instance reference"
+      "Passing int where BigDecimal expected — recurring pattern",
+      "Calling instance methods without the instance reference",
+      "new BigDecimal(0.2) vs new BigDecimal(\"0.2\") — double constructor trap"
     ]
   },
   "apexBridges": {
@@ -51,7 +57,8 @@
       "Apex Integer (always object) → Java int (primitive) vs Integer (object)",
       "Single quotes for strings → double quotes only (single = char)",
       "Apex switch on → Java switch expression (returns a value)",
-      "AND() formula → && operator"
+      "AND() formula → && operator",
+      "God-method trigger handlers → SRP clean methods"
     ],
     "surprises": [
       "No platform to push to — you run the app yourself",
@@ -60,16 +67,17 @@
       "0.1 + 0.2 != 0.3 with double",
       "Local variables have no default value — must initialize",
       "Switch can produce a value — Apex switch cannot",
-      "Can't switch on BigDecimal — must convert to String/enum first"
+      "Can't switch on BigDecimal — must convert to String/enum first",
+      "Method parameters must be exact types — no implicit conversion to BigDecimal"
     ],
     "notes": {}
   },
   "stats": {
     "totalModules": 40,
     "totalProjects": 12,
-    "modulesCompleted": 3,
+    "modulesCompleted": 4,
     "modulesPartial": 0,
-    "challengesSolved": 3,
+    "challengesSolved": 4,
     "totalSessions": 2,
     "streak": 2
   },
